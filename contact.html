@@ -1,0 +1,173 @@
+<html>
+<head>
+    <title> Fpno CS Weekend Website</title>
+ <!-- <link rel="stylesheet" type ="text/css" href="style.css"> -->
+    <style>
+body {
+  font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgb(238, 236, 241);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3e7e83;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #9ee28d;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+        .bg{
+        background-image:url(https://live.staticflickr.com/65535/52878131585_3ed1390aab_w.jpg);
+        height: 90%;
+        width: 100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+           }
+
+.button {
+        background-color: #06940b; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(232, 243, 245); 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #d81e7b;
+  color: white;
+}
+
+.nav{
+    padding: 10px;
+    background: rgb(51, 14, 219);
+    position:sticky;
+    top:0;
+    width:60%;
+    height:60px;
+    left: 20%;
+}
+
+.headbtn{
+            rposition: absolute;
+            margin:auto; 
+
+            }
+
+
+</style>
+</head>
+
+<body >
+  <h1 style="background-color: rgb(228, 132, 8); font-size: 350%;">Fpno Cs Weekend Website</h1>
+<!--<div class="bg"> -->
+    <div class="nav">
+        <div class="headbtn">
+            <a class="button button1" href="index.html" > Home</a>
+            <a class="button button1" href="About.html" > About</a>
+            <a class="button button1" href="Services.html" > Services</a>
+            <a class="button button1" href="contact.html" > Contact</a>
+        </div>
+    </div>
+
+    
+  
+</div>
+   <!-- <h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p> -->
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://live.staticflickr.com/65535/52878202033_9c2bf60278.jpg style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        
+          <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Togo">Togo</option>
+<option value="Cameroun">Cameroun</option>
+        </select>
+          
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
